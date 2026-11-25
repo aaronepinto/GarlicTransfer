@@ -134,7 +134,7 @@ See [SKINS.md](SKINS.md) for the format and fallback behavior.
 
 1. Start GarlicTransfer and click **Discover consoles**.
 2. Select the source console. The verified first browse on 14.22 used a decimal PSN account ID. Enter that ID, or click **Find in PS4 USB backup** to derive it from the USB drive, its `PS4` or `SAVEDATA` folder, or the 16-hex-digit account folder inside `SAVEDATA`. The USB picker has not been live-tested end to end. GarlicTransfer only reads folder names; it does not import or modify the PS4 save. After a successful browse, the per-console `metadata.db` supplies the ID automatically.
-   On Windows, **Pair this PS5 once (experimental)** offers a menu-based alternative that has not yet been verified on a live PS5. Start its listener, then open **Settings → System → System Software → Data Transfer** on the PS5 and select **GarlicTransfer Pairing**. The PS5 may say **Can't transfer data**; no save migration starts. If GarlicTransfer confirms pairing, return to the home screen. The captured identifier stays in the app's private user-data folder for this console and firmware. If pairing does not complete, use the account-ID or USB route. Linux and macOS use those routes as well.
+   On Windows, **Pair this PS5 once (experimental)** offers a menu-based alternative that has not yet been verified on a live PS5. Start its listener, then open **Settings → System → System Software → Data Transfer** on the PS5 and select **GarlicTransfer Pairing**. The PS5 may say **Can't transfer data**; no save migration starts. If GarlicTransfer confirms pairing, return to the home screen. The captured identifier stays in the app's private user-data folder for this console and firmware. If pairing does not complete, use the account-ID or USB route. Linux uses those routes as well. On macOS, **Pair this PS5** on the Console page has completed with a PS5 on 14.23; see the [GTA VI report](docs/macos-ps5-14.23-gta6-report.md).
 3. Click **Browse console saves** while the PS5 is at its home screen; you do not need to open Data Transfer on the PS5 first.
 4. If asked, briefly press the console power button until it beeps and release.
 5. Select one or more saves and click **Download selected**, or use the per-save Download button.
@@ -162,7 +162,8 @@ The source power signal is sent automatically after one second. If the PS5 asks 
 Click **Browse local saves** to list files downloaded from the selected console profile. **Export** copies a file to a directory of your choice. **Import** replaces the selected local file after a backup confirmation and regenerates its size, SHA-256, GFP5 header, and local manifests for the next upload.
 
 A [macOS / PS5 14.22 field report](docs/macos-ps5-14.22-report.md) records a tested
-backend workflow and its validation limits.
+backend workflow and its validation limits. A [macOS / PS5 14.23 GTA VI report](docs/macos-ps5-14.23-gta6-report.md)
+records an edited GTA VI story slot sent back to the console, and the save layout behind it.
 
 ## Development checks
 
